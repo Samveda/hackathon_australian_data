@@ -10,11 +10,6 @@ class Testing(unittest.TestCase):
 	    self.student_return = pd.read_csv(self.path,header=None)
 	    self.original_return = pd.read_csv('Orginal_classes.csv')
 	    print(self.student_return.dtypes)	
-#	    with open(self.path, 'r') as f:
-#            	 student_return = f.readlines()
-#	    with open('Orginal_classes.csv', 'r') as f:
-#            	 original_return = f.readlines()
-	    #self.student_return = self.path
 
 	def test_return(self):
             self.assertEqual(self.student_return.shape, (138, 1), "Return value shape does not match expected value")
