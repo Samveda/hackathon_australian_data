@@ -6,7 +6,7 @@ import pandas as pd
 
 class Testing(unittest.TestCase):
 	def setUp(self):
-	    self.path = 'Orginal_classes.csv'
+	    self.path = '../notebook/predicted_class.csv'
 	    self.student_return = pd.read_csv(self.path,header=None)
 	    self.original_return = pd.read_csv('Orginal_classes.csv')
 	    print(self.student_return.dtypes)	
